@@ -42,15 +42,15 @@ header {
   font-size: 40px;
   color: #541e5e;
   position: absolute;
-  left: 685px;
+  left: 820px;
   top: 98px;
 }
 .material-symbols-outlined:hover {
   border: 1px solid transparent;
-  background-color: #e8f0fe;
-
-  width: 100px;
+  background-color: #541e5e;
+  width: 80px;
   border-radius: 5px;
+  color: #e8f0fe;
 }
 
 main {
@@ -60,7 +60,7 @@ main {
 .current-temperature {
   font-size: 40px;
   position: relative;
-  left: -55px;
+  left: -24px;
   top: -67px;
 }
 
@@ -107,7 +107,7 @@ main {
 }
 
 .current-temperature-value {
-  font-size: 60px;
+  font-size: 66px;
   font-weight: bold;
   color: #fff;
 }

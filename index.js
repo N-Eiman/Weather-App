@@ -1,5 +1,6 @@
 function displayTemp(response) {
   //Icon update
+  console.log(response);
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src= ${response.data.condition.icon_url} class="current-temperature-icon" />`;
 

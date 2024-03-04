@@ -1,8 +1,7 @@
 function displayTemp(response) {
-  /* //Icon update
-  let icon = response.data.condition.icon_url;
+  //Icon update
   let iconElement = document.querySelector("#icon");
-  iconElement.innerHTML = icon;*/
+  iconElement.innerHTML = `<img src= ${response.data.condition.icon_url} class="current-temperature-icon" />`;
 
   //retrieve date
   let currentDateELement = document.querySelector("#current-date");

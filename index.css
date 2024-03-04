@@ -98,9 +98,10 @@ main {
 
 .current-temperature-icon {
   position: relative;
-  top: -8px;
+  top: -9px;
   font-size: 30px;
-  margin-right: 10px;
+  margin-right: 2px;
+  margin-bottom: -43px;
 }
 
 .current-temperature-value {

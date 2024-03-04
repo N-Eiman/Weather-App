@@ -73,3 +73,7 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
 let currentDate = new Date();
+
+//create an event for the search icon so it works like a button
+let searchIcon = document.querySelector("#search");
+searchIcon.addEventListener("click", search);

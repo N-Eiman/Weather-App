@@ -4,14 +4,27 @@ function displayTemp(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = icon;*/
 
+  //retrieve date
+  let currentDateELement = document.querySelector("#current-date");
+  currentDateELement.innerHTML = formatDate(currentDate);
+
+  //retrieve city
+  let cityElement = document.querySelector("#current-city");
+  cityElement.innerHTML = response.data.city;
+
+  //update weather condition
+  let conditionElement = document.querySelector("#weather-condition");
+  let condition = response.data.condition.description;
+  conditionElement.innerHTML = condition;
+
   //update humidity
   let humidity = response.data.temperature.humidity;
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = humidity;
+  humidityElement.innerHTML = humidity + "%";
   //update wind
   let wind = response.data.wind.speed;
   let windElement = document.querySelector("#wind");
-  windElement.innerHTML = wind;
+  windElement.innerHTML = Math.round(wind) + "km/h";
   //udate temperature
   let temperature = Math.round(response.data.temperature.current);
   let tempElement = document.querySelector("#temp");
@@ -59,7 +72,4 @@ function formatDate(date) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
-
-currentDateELement.innerHTML = formatDate(currentDate);

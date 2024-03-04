@@ -1,4 +1,18 @@
 function displayTemp(response) {
+  /* //Icon update
+  let icon = response.data.condition.icon_url;
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = icon;*/
+
+  //update humidity
+  let humidity = response.data.temperature.humidity;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = humidity;
+  //update wind
+  let wind = response.data.wind.speed;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = wind;
+  //udate temperature
   let temperature = Math.round(response.data.temperature.current);
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = temperature;
